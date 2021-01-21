@@ -1,6 +1,7 @@
 #include<stdio.h>
 #include <stdlib.h>
 
+int rest=0;
 /*
  * return int integer 10 base
  * Params (int binary)
@@ -17,40 +18,58 @@ int binaryToInt() {
 int functBinary(int a, int b){
 }
 
+
+
+
 //Somme des deux valeur binaire
-int Sum(int *a, int *b, int *sortie){
-	
-<<<<<<< HEAD
+int Sum(int a, int b, int k){   
 
-    int i;
- 	
- 	
- 	//Application du ET logique
-    for(i=0; i<8; i++)
+    int r=0;
+    rest=0;
+    if(a+b+k==1)
     {
-
-        if((a[i] == '0') && (b[i] == '0'))
-            sortie[i] = '0';
-        if((a[i] == '0') && (b[i] == '1'))
-            sortie[i] = '1';
-        if((a[i] == '1') && (b[i] == '0'))
-            sortie[i] = '1';
-        if((a[i] == '1') && (b[i] == '1'))
-            sortie[i] = '0';
-    
+        r=1;
     }
-    
-    //Affichage
-    for(i=0; i<8; i++)
-    	printf ("La somme de ces 2 valeurs est:   %d", sortie[i]);
+
+    if(a+b+k==2)
+        {
+           rest=1;
+           r=0;
+        }else if(a+b+k==3)
+        {
+           rest=1;
+           r=1;
+        }
+
+    return r;
 }
-	
-	
-=======
-}
->>>>>>> master
+
+
+
+
 
 int main(){
-		
-	return 0;
+
+    int a[3], b[3], c[4], i;
+
+
+    for (i = 2;i >= 0;i--){
+        c[i+1]=Sum(a[i],b[i], rest);
+    }
+    
+    if(rest==1){
+        c[0]=rest;
+    }
+    
+    if(rest==1){
+        printf("%d",c[0]);
+    }
+    
+    for (i = 1 ; i <4; i++){
+
+        printf("%d",c[i]);
+    }
+
+
+    return 0;
 }
