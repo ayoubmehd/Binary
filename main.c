@@ -14,11 +14,9 @@ int binaryToInt(int binary[], int size) {
 	
 	for (i = 0; i < size; i++) {
 		
-//		printf("%d ) val: %d - res : %d - pow : %d\n", j, binary[i], binary[i] * ((int)pow(2, j)), ((int)pow(2, j)));
-		
-
 		sum += binary[i] * ((int)pow(2, j));
 		j--;
+	
 	}
 	
 	printf("sum : %d, size : %d\n", sum, size);
