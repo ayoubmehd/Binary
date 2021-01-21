@@ -1,8 +1,26 @@
-#include <stdio.h>
+#include<stdio.h>
+#include <stdlib.h>
+
+/*
+ * return int integer 10 base
+ * Params (int binary)
+ *
+ **/
+
+int binaryToInt() {
+	
+}
+
+// function convert int to binary 
+// return binary 
+
+int functBinary(int a, int b){
+}
 
 //Somme des deux valeur binaire
 int Sum(int *a, int *b, int *sortie){
 	
+<<<<<<< HEAD
 
     int i;
  	
@@ -28,10 +46,11 @@ int Sum(int *a, int *b, int *sortie){
 }
 	
 	
+=======
+}
+>>>>>>> master
 
 int main(){
-	
-	
-	
+		
 	return 0;
 }
