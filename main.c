@@ -17,6 +17,13 @@ int binaryToInt() {
 int functBinary(int a, int b){
 }
 
-int main() {
+//Somme des deux valeur binaire
+int Sum(){
+	
+	
+}
+
+int main(){
+		
 	return 0;
 }
