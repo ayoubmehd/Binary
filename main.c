@@ -17,8 +17,8 @@ int binaryToInt() {
 
 
 
-int *functBinary(int a){
-	int i = 0,j=0,b[4],bin;
+void functBinary(int *b, int a){
+	int i = 0,j=0,bin;
 	while(a !=0){
 		b[j]=a%2;
 		bin=a*i;
@@ -26,7 +26,6 @@ int *functBinary(int a){
 		i=i*10;
 		j++;
 	}
-return b;
 	
 	 
 }
@@ -40,10 +39,10 @@ int Sum(){
 
 
 int main() {
-	int i=4;
+	int i =	6;
 	//int a[]={1,0,0,0,1};
-	int *p;
-	p = functBinary(32);
+	int p[i + 1];
+	functBinary(p, 64);
 	
 	while(i >= 0)
 	printf("%d",p[i--]);
